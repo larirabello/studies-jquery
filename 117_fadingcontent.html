@@ -18,14 +18,14 @@
       <button id="faderIn">Fade in!</button>
 
 
-    <script type="text/javascript">
+    <script>
 
       $("#fader").click(function() {
 
         $("p").fadeOut("slow", function() {
 
           alert("FadeOut complete!");
-          
+
         }); // hide() no lugar de fadeOut  ou $(this).css("display", "none");
 
       });
