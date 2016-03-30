@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Learning Javascript </title>
+
+    <!-- embedding jquery -->
+    <script type="text/javascript" src="jquery-1.12.2.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <p>This is some text</p>
+      <button id="fader">Fade out!</button>
+      <button id="faderIn">Fade in!</button>
+
+
+    <script type="text/javascript">
+
+      $("#fader").click(function() {
+
+        $("p").fadeOut("slow", function() {
+
+          alert("FadeOut complete!");
+          
+        }); // hide() no lugar de fadeOut  ou $(this).css("display", "none");
+
+      });
+
+      $("#faderIn").click(function() {
+
+        $("p").fadeIn(2000); // hide() no lugar de fadeOut  ou $(this).css("display", "none");
+
+      });
+
+
+
+
+    </script>
+
+  </body>
+</html>

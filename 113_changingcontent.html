@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Learning Javascript </title>
+
+    <!-- embedding jquery -->
+    <script type="text/javascript" src="jquery-1.12.2.min.js"></script>
+
+    <style>
+
+      #circle {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        border-radius: 100px;
+      }
+
+      .square {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin-top: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div id="circle"></div>
+    <div  class="square"></div>
+
+    <h4>This is a title</h4>
+    <p>This is some text</p>
+
+    <iframe src="http://www.cnn.com"></iframe>
+
+    <script type="text/javascript">
+
+      $("#circle").click(function() {
+
+        $("p").html("The text has been changed");
+
+      });
+
+      $(".square").hover(function() {
+
+        $("h4").html("The title has been changed");
+
+      });
+
+      $("#circle").hover(function() {
+
+        $("iframe").attr("src", "http://www.uol.com.br");
+
+      });
+
+
+
+    </script>
+
+  </body>
+</html>
